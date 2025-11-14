@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    // ... (All your variable declarations are fine) ...
+    // ... (All other variables are the same)
     public int health = 100;
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
@@ -27,14 +27,18 @@ public class Player : MonoBehaviour
   
     public int extraJumpsValue = 1;
     private int extraJumps;
+    
     public Transform wallCheck;
-    public float wallCheckDistance = 0.4f;
+    public float wallCheckRadius = 0.2f; // <-- NEW
     public float wallSlideSpeed = 2f;
+    public LayerMask wallLayer; 
     private bool isTouchingWall;
+    
+    public float coyoteTime = 0.1f; 
+    private float coyoteTimeCounter;
 
     void Start()
     {
-        // <-- FIX: Cleaned up Start() to be more efficient.
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -48,39 +52,45 @@ public class Player : MonoBehaviour
         {
             return;
         }
-
-        float moveInput = Input.GetAxis("Horizontal");
-
-        // <-- FIX: The unconditional movement line that was here has been DELETED.
-
-        // State Checks
-        CheckIfWallSliding();
-
-        // Ground Resets
+        
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        CheckIfWallSliding(); // Check our state
+        
+        if (isGrounded)
+        {
+            coyoteTimeCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
+        }
+        
         if (isGrounded)
         {
             extraJumps = extraJumpsValue;
             extraDashes = extraDashValue;
         }
 
-        // --- FIX: This IF/ELSE block is now the ONLY thing controlling horizontal movement ---
+        float moveInput = Input.GetAxis("Horizontal");
+        
         if (isTouchingWall && !isGrounded)
         {
             // Wall Slide State
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, Mathf.Clamp(rb.linearVelocity.y, -wallSlideSpeed, float.MaxValue)); // <-- FIX: Capital 'C' in Clamp
+            // <-- MODIFIED: Set X velocity to 0 for a better "stick"
+            rb.linearVelocity = new Vector2(0f, Mathf.Clamp(rb.linearVelocity.y, -wallSlideSpeed, float.MaxValue));
         }
         else
         {
             // Normal Movement State
             rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
         }
-
-        // Handle Inputs (Jump, Dash, Flip)
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (isGrounded)
+            if (coyoteTimeCounter > 0f)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                coyoteTimeCounter = 0f;
             }
             else if (extraJumps > 0)
             {
@@ -104,18 +114,23 @@ public class Player : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        // Update Animation and UI
         SetAnimation(moveInput);
         healthImage.fillAmount = health / 100f;
     }
-
+    
+    // <-- MODIFIED: Switched to a more reliable OverlapCircle check
+    private void CheckIfWallSliding()
+    {
+        isTouchingWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, wallLayer);
+    }
+    
+    // ... (The rest of your code from Dash() onwards is perfect and needs no changes) ...
     private IEnumerator Dash()
     {
         isDashing = true;
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
-
-        // <-- FIX: Using transform.localScale.x is more reliable for dash direction.
+        
         float dashDirection = transform.localScale.x;
 
         rb.linearVelocity = new Vector2(dashDirection * dashSpeed, 0f);
@@ -126,18 +141,8 @@ public class Player : MonoBehaviour
         isDashing = false;
     }
 
-    private void FixedUpdate()
-    {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-    }
+    private void FixedUpdate() { }
 
-    // <-- FIX: This function now ONLY checks for the wall. It no longer touches the physics.
-    private void CheckIfWallSliding()
-    {
-        isTouchingWall = Physics2D.Raycast(wallCheck.position, new Vector2(transform.localScale.x, 0), wallCheckDistance, groundLayer);
-    }
-
-    // ... (The rest of your functions: SetAnimation, OnCollisionEnter2D, etc. are all perfectly fine) ...
     private void SetAnimation(float moveInput)
     {
         if (isGrounded)
