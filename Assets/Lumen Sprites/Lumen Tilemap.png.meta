@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 5dd1fd7f12f9f9043a846d8e21039a10
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5102271976810080047
+    second: Lumen Tilemap_0
+  - first:
+      213: -801049909052708611
+    second: Lumen Tilemap_1
+  - first:
+      213: -7267051272276222112
+    second: Lumen Tilemap_2
+  - first:
+      213: 2564835663575422871
+    second: Lumen Tilemap_3
+  - first:
+      213: -966482061655675074
+    second: Lumen Tilemap_4
+  - first:
+      213: -2412221754791988970
+    second: Lumen Tilemap_5
+  - first:
+      213: 7952682434623077461
+    second: Lumen Tilemap_6
+  - first:
+      213: -2116011419643541057
+    second: Lumen Tilemap_7
+  - first:
+      213: 6875437545347455896
+    second: Lumen Tilemap_8
+  - first:
+      213: -5390491182145631795
+    second: Lumen Tilemap_9
+  - first:
+      213: -8928834572483456024
+    second: Lumen Tilemap_10
+  - first:
+      213: -4165955727177198482
+    second: Lumen Tilemap_11
+  - first:
+      213: -6511342889199691780
+    second: Lumen Tilemap_12
+  - first:
+      213: -2949285131221423477
+    second: Lumen Tilemap_13
+  - first:
+      213: 1973081274712788016
+    second: Lumen Tilemap_14
+  - first:
+      213: 8698323503580284796
+    second: Lumen Tilemap_15
+  - first:
+      213: -360291275173292051
+    second: Lumen Tilemap_16
+  - first:
+      213: 2323351764628569697
+    second: Lumen Tilemap_17
+  - first:
+      213: -7540472560407963287
+    second: Lumen Tilemap_18
+  - first:
+      213: 1479669015576530826
+    second: Lumen Tilemap_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lumen Tilemap_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 327
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d81eca8ba61139b0800000000000000
+      internalID: -5102271976810080047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 295
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df8ed831a5912e4f0800000000000000
+      internalID: -801049909052708611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_2
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 311
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06fdc6fce5f362b90800000000000000
+      internalID: -7267051272276222112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 279
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7979aaa6270289320800000000000000
+      internalID: 2564835663575422871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_4
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 283
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3fe9318fad5692f0800000000000000
+      internalID: -966482061655675074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_5
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 247
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61177223811168ed0800000000000000
+      internalID: -2412221754791988970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_6
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 215
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c72370a8a9d5e60800000000000000
+      internalID: 7952682434623077461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_7
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 231
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb90a7f23da62a2e0800000000000000
+      internalID: -2116011419643541057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_8
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 199
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b91d515067a6f50800000000000000
+      internalID: 6875437545347455896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_9
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 203
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc9855374d02135b0800000000000000
+      internalID: -5390491182145631795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_10
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 167
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e395e86348661480800000000000000
+      internalID: -8928834572483456024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_11
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 135
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64599b965d8f26c0800000000000000
+      internalID: -4165955727177198482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_12
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 135
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf79c7e042013a5a0800000000000000
+      internalID: -6511342889199691780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_13
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 119
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8aa4349cc80217d0800000000000000
+      internalID: -2949285131221423477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_14
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 124
+        width: 50
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c0b3c27fac16b10800000000000000
+      internalID: 1973081274712788016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_15
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 87
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c77855c0427a6b870800000000000000
+      internalID: 8698323503580284796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_16
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 55
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de79f9f7efcfffaf0800000000000000
+      internalID: -360291275173292051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_17
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 55
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e76face143e3020800000000000000
+      internalID: 2323351764628569697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 39
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9699d4e482cda5790800000000000000
+      internalID: -7540472560407963287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lumen Tilemap_19
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 39
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f479a4127d88410800000000000000
+      internalID: 1479669015576530826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Lumen Tilemap_0: -5102271976810080047
+      Lumen Tilemap_1: -801049909052708611
+      Lumen Tilemap_10: -8928834572483456024
+      Lumen Tilemap_11: -4165955727177198482
+      Lumen Tilemap_12: -6511342889199691780
+      Lumen Tilemap_13: -2949285131221423477
+      Lumen Tilemap_14: 1973081274712788016
+      Lumen Tilemap_15: 8698323503580284796
+      Lumen Tilemap_16: -360291275173292051
+      Lumen Tilemap_17: 2323351764628569697
+      Lumen Tilemap_18: -7540472560407963287
+      Lumen Tilemap_19: 1479669015576530826
+      Lumen Tilemap_2: -7267051272276222112
+      Lumen Tilemap_3: 2564835663575422871
+      Lumen Tilemap_4: -966482061655675074
+      Lumen Tilemap_5: -2412221754791988970
+      Lumen Tilemap_6: 7952682434623077461
+      Lumen Tilemap_7: -2116011419643541057
+      Lumen Tilemap_8: 6875437545347455896
+      Lumen Tilemap_9: -5390491182145631795
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
