@@ -55,5 +55,8 @@ TagManager:
   - name: Checkpoints
     uniqueID: 2757186329
     locked: 0
+  - name: Crystal
+    uniqueID: 415339215
+    locked: 0
   m_RenderingLayers:
   - Default

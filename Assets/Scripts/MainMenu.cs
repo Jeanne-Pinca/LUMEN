@@ -5,12 +5,15 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame() // loads the scene named "GameScene" or whatever is assigned upon clicking the start button
     {
-        SceneManager.LoadScene("GameScene"); 
+        SceneManager.LoadScene("First Level"); 
     }
 
     public void QuitGame() // quits the application upon clicking the quit button
     {
-        Application.Quit(); 
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false; // stops play mode in the editor
+        #endif
+        Application.Quit(); // quits the application
     }
 
 }

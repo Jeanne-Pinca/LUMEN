@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
 
     //is respawning tag
      private bool isRespawning = false;
+     public bool hasKey = false; 
 
     void Start()
     {
