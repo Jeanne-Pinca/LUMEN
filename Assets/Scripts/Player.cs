@@ -198,6 +198,27 @@ public class Player : MonoBehaviour
         }
     }
 
+// --- NEW FUNCTION FOR TRIGGERS (LIKE PITS) ---
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // If we pass through an object tagged "Pit"
+        if (collision.CompareTag("Pit"))
+        {
+            // Instant death
+            health = 0;
+            
+            // Update UI (optional, but good visual feedback)
+            if (healthImage != null)
+            {
+                healthImage.fillAmount = 0f;
+            }
+
+            // Call the GameManager to respawn
+            GameManager.Instance.RespawnPlayer(this);
+        }
+    }
+
+
     private IEnumerator BlinkRed()
     {
         spriteRenderer.color = Color.red;

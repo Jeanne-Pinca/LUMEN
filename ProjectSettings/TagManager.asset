@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Damage
+  - Pit
   layers:
   - Default
   - TransparentFX
@@ -41,6 +42,18 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Wall
+    uniqueID: 4131258573
+    locked: 0
+  - name: Player
+    uniqueID: 1663907891
+    locked: 0
+  - name: Ground
+    uniqueID: 4272749857
+    locked: 0
+  - name: Checkpoints
+    uniqueID: 2757186329
     locked: 0
   m_RenderingLayers:
   - Default
